@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>checkout</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+
+<header class="header">
+   <div class="flex">
+      <a href="admin_page.html" class="logo">Jom Makan<span>.</span></a>
+      <nav class="navbar">
+        <a href="../home.jsp">home</a>
+        <a href="shop.html">shop</a>
+        <a href="orders.html">orders</a>
+        <a href="about.html">about</a>
+        <a href="contact.html">contact</a>
+      </nav>
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <a href="search_page.html" class="fas fa-search"></a>
+         <a href="wishlist.html"><i class="fas fa-heart"></i><span>(0)</span></a>
+         <a href="cart.html"><i class="fas fa-shopping-cart"></i><span>(0)</span></a>
+      </div>
+      <div class="profile">
+         <img src="uploaded_img/default.png" alt="">
+         <p>Guest</p>
+         <a href="user_profile_update.html" class="btn">update profile</a>
+         <a href="login.html" class="delete-btn">logout</a>
+         <div class="flex-btn">
+            <a href="login.html" class="option-btn">login</a>
+            <a href="register.html" class="option-btn">register</a>
+         </div>
+      </div>
+   </div>
+</header>
+
+<section class="display-orders">
+   <!-- if cart is nothing, it will show... -->
+   <p class="empty">Your cart is empty!</p>
+   <!-- if cart have item, it will calculate the total and display total...  -->
+   <div class="grand-total">grand total : <span>RM0/-</span></div> 
+</section>
+
+   <!-- CHECKOUT ORDER -->
+<section class="checkout-orders">
+   <form action="#" method="POST">
+      <h3>place your order</h3>
+      <div class="flex">
+         <!-- ENTER ORDER INFORMATION -->
+         <div class="inputBox">
+            <span>your name :</span>
+            <input type="text" name="name" placeholder="enter your name" class="box" required>
+         </div>
+         <div class="inputBox">
+            <span>your number :</span>
+            <input type="number" name="number" placeholder="enter your number" class="box" required>
+         </div>
+         <div class="inputBox">
+            <span>your email :</span>
+            <input type="email" name="email" placeholder="enter your email" class="box" required>
+         </div>
+         <div class="inputBox">
+            <span>payment method :</span>
+            <select name="method" class="box" required>
+               <option value="cash on delivery">cash on delivery (only for malaysian)</option>
+               <option value="credit card">credit card</option>
+               <option value="paytm">touch n go</option>
+               <option value="paypal">paypal</option>
+            </select>
+         </div>
+         <div class="inputBox">
+            <span>address line 01 :</span>
+            <input type="text" name="flat" placeholder="e.g. house number" class="box" required>
+         </div>
+         <div class="inputBox">
+            <span>address line 02 :</span>
+            <input type="text" name="street" placeholder="e.g. street name" class="box" required>
+         </div>
+         <div class="inputBox">
+            <span>city :</span>
+            <input type="text" name="city" placeholder="e.g. Temerloh" class="box" required>
+         </div>
+         <div class="inputBox">
+            <span>state :</span>
+            <input type="text" name="state" placeholder="e.g. Pahang" class="box" required>
+         </div>
+         <div class="inputBox">
+            <span>country :</span>
+            <input type="text" name="country" placeholder="e.g. Malaysia" class="box" required>
+         </div>
+         <div class="inputBox">
+            <span>postcode :</span>
+            <input type="number" min="0" name="pin_code" placeholder="e.g. 123456" class="box" required>
+         </div>
+      </div>
+      <input type="submit" name="order" class="btn disabled" value="place order">
+   </form>
+</section>
+
+<footer class="footer">
+    <section class="box-container">
+       <div class="box">
+          <h3>quick links</h3>
+          <a href="../home.jsp"> <i class="fas fa-angle-right"></i> home</a>
+          <a href="shop.html"> <i class="fas fa-angle-right"></i> shop</a>
+          <a href="about.html"> <i class="fas fa-angle-right"></i> about</a>
+          <a href="contact.html"> <i class="fas fa-angle-right"></i> contact</a>
+       </div>
+       <div class="box">
+          <h3>extra links</h3>
+          <a href="cart.html"> <i class="fas fa-angle-right"></i> cart</a>
+          <a href="wishlist.html"> <i class="fas fa-angle-right"></i> wishlist</a>
+          <a href="login.html"> <i class="fas fa-angle-right"></i> login</a>
+          <a href="register.html"> <i class="fas fa-angle-right"></i> register</a>
+       </div>
+       <div class="box">
+          <h3>contact info</h3>
+          <p> <i class="fas fa-phone"></i> +03-111-2222 </p>
+          <p> <i class="fas fa-phone"></i> +03-222-3333 </p>
+          <p> <i class="fas fa-envelope"></i> jommakan@gmail.com </p>
+          <p> <i class="fas fa-map-marker-alt"></i> Penang, Malaysia - 10150 </p>
+       </div>
+       <div class="box">
+          <h3>follow us</h3>
+          <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+          <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+          <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+          <a href="#"> <i class="fab fa-tiktok"></i> tiktok </a>
+       </div>
+    </section>
+    <p class="credit"> &copy; CAT201 Project 2024 by <span>Team YumYum</span> | Jom Makan </p>
+ </footer>
+
+ <script src="../js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>admin page</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="../css/admin_style.css">
+
+</head>
+<body>
+
+   <header class="header">
+      <div class="flex">
+         <a href="admin_page.html" class="logo">Admin<span>Panel</span></a>
+         <nav class="navbar">
+            <a href="admin_page.html">home</a>
+            <a href="admin_products.html">products</a>
+            <a href="admin_orders.html">orders</a>
+            <a href="admin_users.html">users</a>
+            <a href="admin_contacts.html">messages</a>
+         </nav>
+         <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="user-btn" class="fas fa-user"></div>
+         </div>
+         <div class="profile">
+            <img src="../uploaded_img/default.png" alt="">
+            <p>Admin</p>
+            <a href="admin_update_profile.html" class="btn">update profile</a>
+            <a href="login.html" class="delete-btn">logout</a>
+            <div class="flex-btn">
+               <a href="login.html" class="option-btn">login</a>
+               <a href="register.html" class="option-btn">register</a>
+            </div>
+         </div>
+      </div>
+   </header>
+
+   <!-- ADMIN DASHBOARD -->
+<section class="dashboard">
+   <h1 class="title">dashboard</h1>
+   <div class="box-container">
+      <div class="box">
+         <!-- total price for orders status = pending -->
+         <!-- will change when new order come in, set default is 0.. -->
+         <h3>RM0/-</h3>
+         <!-- shows the pending order that not complete yet. -->
+         <p>total pendings</p>
+         <!-- go to admin order page when click on 'see order' button. -->
+         <a href="admin_orders.html" class="btn">see orders</a>
+      </div>
+
+      <div class="box">
+         <!-- total price for order status = completed -->
+          <!-- also will change after(increase) after a order's status changing from pending to completed. -->
+         <h3>RM0/-</h3>
+         <p>completed orders</p>
+         <!-- go to admin order page when click on 'see order' button. -->
+         <a href="admin_orders.html" class="btn">see orders</a>
+      </div>
+
+      <div class="box">
+         <h3>0</h3>
+         <p>orders placed</p>
+         <!-- go to admin order page when click on 'see order' button. -->
+         <a href="admin_orders.html" class="btn">see orders</a>
+      </div>
+
+      <div class="box">
+         <!-- total product that have in this website -->
+         <h3>0</h3>
+         <p>products added</p>
+         <!-- go to admin product page when click on 'see product' button. -->
+         <a href="admin_products.html" class="btn">see products</a>
+      </div>
+
+      <div class="box">
+         <!-- total user that have or have register for the website -->
+         <h3>0</h3>
+         <p>total users</p>
+         <!-- go to admin user page when click on 'see accounts' button. -->
+         <a href="admin_users.html" class="btn">see accounts</a>
+      </div>
+
+      <div class="box">
+         <!-- total admin for the website -->
+         <h3>0</h3>
+         <p>total admins</p>
+         <!-- go to admin user page when click on 'see accounts' button. -->
+         <a href="admin_users.html" class="btn">see accounts</a>
+      </div>
+
+      <div class="box">
+         <!-- total users for this website, including admin -->
+         <h3>0</h3>
+         <p>total accounts</p>
+         <!-- go to admin user page when click on 'see accounts' button. -->
+         <a href="admin_users.html" class="btn">see accounts</a>
+      </div>
+
+      <div class="box">
+         <!-- total message that send back customers via CONTACT  -->
+         <h3>0</h3>
+         <p>total messages</p>
+         <!-- go to admin contact page when click on 'see message' button. -->
+         <a href="admin_contacts.html" class="btn">see messages</a>
+      </div>
+
+   </div>
+
+</section>
+
+<footer class="footer">
+   <section class="box-container">
+      <div class="box">
+         <h3>quick links</h3>
+         <a href="admin_page.html"> <i class="fas fa-angle-right"></i> home</a>
+         <a href="admin_products.html"> <i class="fas fa-angle-right"></i> products</a>
+         <a href="admin_orders.html"> <i class="fas fa-angle-right"></i> orders</a>
+         <a href="admin_users.html"> <i class="fas fa-angle-right"></i> users</a>
+         <a href="admin_contacts.html"> <i class="fas fa-angle-right"></i> messages</a>
+      </div>
+      <div class="box">
+         <h3>contact info</h3>
+         <p> <i class="fas fa-phone"></i> +03-111-2222 </p>
+         <p> <i class="fas fa-phone"></i> +111-222-3333 </p>
+         <p> <i class="fas fa-envelope"></i> adminpanel_jommakan@gmail.com </p>
+         <p> <i class="fas fa-map-marker-alt"></i> Penang, Malaysia - 50000 </p>
+      </div>
+   </section>
+   <p class="credit"> &copy; Admin Panel 2024 | Team YumYum <span>Jom Makan </span> </p>
+</footer>
+
+<script src="../js/script.js"></script>
+
+
+</body>
+</html>

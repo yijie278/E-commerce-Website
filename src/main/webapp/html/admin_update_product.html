@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>update products</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="../css/admin_style.css">
+
+</head>
+<body>
+
+   <header class="header">
+      <div class="flex">
+         <a href="admin_page.html" class="logo">Admin<span>Panel</span></a>
+         <nav class="navbar">
+            <a href="admin_page.html">home</a>
+            <a href="admin_products.html">products</a>
+            <a href="admin_orders.html">orders</a>
+            <a href="admin_users.html">users</a>
+            <a href="admin_contacts.html">messages</a>
+         </nav>
+         <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="user-btn" class="fas fa-user"></div>
+         </div>
+         <div class="profile">
+            <img src="../uploaded_img/default.png" alt="">
+            <p>Admin</p>
+            <a href="admin_update_profile.html" class="btn">update profile</a>
+            <a href="login.html" class="delete-btn">logout</a>
+            <div class="flex-btn">
+               <a href="login.html" class="option-btn">login</a>
+               <a href="register.html" class="option-btn">register</a>
+            </div>
+         </div>
+      </div>
+   </header>
+
+   <!-- ADMIN CAN UPDATE OR MODIFY THE PRODUCT -->
+<section class="update-product">
+   <h1 class="title">update product</h1>
+   <form action="" method="post" enctype="multipart/form-data">
+      <input type="hidden" name="old_image" value="default_image.jpg">
+      <input type="hidden" name="pid" value="product_id">
+      <img src="../uploaded_img/default_image.jpg" alt="">
+      <input type="text" name="name" placeholder="enter product name" required class="box" value="Product Name">
+      <input type="number" name="price" min="0" placeholder="enter product price" required class="box" value="0">
+      <select name="category" class="box" required>
+         <option selected>select category</option>
+         <!-- select the category for new item -->
+         <option value="nutty">Sweet and Nutty</option>
+         <option value="spices">spices</option>
+         <option value="spicy">Hot and Spicy</option>
+         <option value="herbal">Herbal</option>
+      </select>
+      <!-- update the new details for product -->
+      <textarea name="details" required placeholder="enter product details" class="box" cols="30" rows="10"></textarea>
+      <input type="file" name="image" class="box" accept="image/jpg, image/jpeg, image/png">
+      <div class="flex-btn">
+         <input type="submit" class="btn" value="update product" name="update_product">
+         <a href="admin_products.html" class="option-btn">go back</a>
+      </div>
+   </form>
+
+</section>
+
+<footer class="footer">
+   <section class="box-container">
+      <div class="box">
+         <h3>quick links</h3>
+         <a href="admin_page.html"> <i class="fas fa-angle-right"></i> home</a>
+         <a href="admin_products.html"> <i class="fas fa-angle-right"></i> products</a>
+         <a href="admin_orders.html"> <i class="fas fa-angle-right"></i> orders</a>
+         <a href="admin_users.html"> <i class="fas fa-angle-right"></i> users</a>
+         <a href="admin_contacts.html"> <i class="fas fa-angle-right"></i> messages</a>
+      </div>
+      <div class="box">
+         <h3>contact info</h3>
+         <p> <i class="fas fa-phone"></i> +03-111-2222 </p>
+         <p> <i class="fas fa-phone"></i> +111-222-3333 </p>
+         <p> <i class="fas fa-envelope"></i> adminpanel_jommakan@gmail.com </p>
+         <p> <i class="fas fa-map-marker-alt"></i> Penang, Malaysia - 50000 </p>
+      </div>
+   </section>
+   <p class="credit"> &copy; Admin Panel 2024 | Team YumYum <span>Jom Makan </span> </p>
+</footer>
+
+<script src="../js/script.js"></script>
+
+
+</body>
+</html>
