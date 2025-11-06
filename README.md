@@ -2,6 +2,20 @@
 
 A full-stack e-commerce web application built with Jakarta EE for selling Malaysian spices and ingredients. This application demonstrates enterprise-level Java web development with a complete shopping experience including product catalog management, shopping cart functionality, and order processing.
 
+## Demo
+<img width="871" height="535" alt="image" src="https://github.com/user-attachments/assets/ca67fba0-1b57-4ce6-bf60-9c05abde74b2" />
+<img width="1918" height="862" alt="image" src="https://github.com/user-attachments/assets/7274fe85-9182-459d-a238-721b0c51ede2" />
+<img width="1919" height="865" alt="image" src="https://github.com/user-attachments/assets/46b05b92-3979-492e-8abf-56d2b2c5bf44" />
+<img width="928" height="871" alt="image" src="https://github.com/user-attachments/assets/f400f704-3466-44e7-b69b-d1d8f73a8d47" />
+<img width="935" height="810" alt="image" src="https://github.com/user-attachments/assets/cd79209e-3ebc-49ab-9eb9-4bffb3b15aa4" />
+<img width="823" height="413" alt="image" src="https://github.com/user-attachments/assets/7af89817-228f-4d44-9d1e-4bdf4292f838" />
+
+<img width="872" height="643" alt="image" src="https://github.com/user-attachments/assets/e11b1381-0f59-4106-bdf7-4a53d9eac59d" />
+<img width="840" height="489" alt="image" src="https://github.com/user-attachments/assets/150d260d-744e-45d9-8648-a2490fda5be9" />
+<img width="916" height="487" alt="image" src="https://github.com/user-attachments/assets/89f66de9-57b2-4870-b08b-1bf8d1be3ce9" />
+<img width="1632" height="688" alt="image" src="https://github.com/user-attachments/assets/3fec21b6-8ac3-4c95-89cf-bd58be7aaa5a" />
+
+
 ## Project Overview
 
 Jom Makan is a Jakarta EE-based e-commerce platform that provides customers with an intuitive interface to browse, view, and purchase Malaysian spices. The application implements a Model-View-Controller (MVC) architecture pattern using Java servlets for request handling, JSP for presentation, and session management for stateful user interactions.
